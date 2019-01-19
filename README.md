@@ -12,7 +12,7 @@ You would need the following to access the website:
 * Smart phone/PC/laptop/Desktop or Tablet.
 * A running network connection to the internet(either wireless or ethernet).
 * A web browser(Chrome is most recommendable).
-* Check out the link here that directs you to the Bank Account application: https://umutonij.github.io/Quiz-Board/
+* Check out the link here that directs you to the Bank Account application: hhttps://umutonij.github.io/Bank-Account/
 
 ## BEHAVIOUR DRIVEN DEVELOPMENT(BDD)
 In this Application, a user must creat the account, and then the user can be able to deposit and withdraw the amount he wants and then can also be able to see the balance.
