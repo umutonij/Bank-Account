@@ -1,4 +1,4 @@
-body{
+.container-fluid{
     background: url(https://docentes.ufps.edu.co/assets/img/bg/bg1.jpg) no-repeat center center fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -22,9 +22,9 @@ body{
   }
   
   button{
-      font-family: "Homer Simpson", cursive;
-   text-shadow: 1px 2px #000;
-     
+      
+      text-shadow: 1px 1px rgb(245, 247, 246);
+      font-family: 'Times New Roman', Times, serif
   }
   
   #col-Login{
@@ -35,7 +35,21 @@ body{
     min-height: 100%;
     padding: 20px;
   }
-  btn-primary{
+  /* btn-primary{
       color: black;
+  } */
+  
+  .container{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcaZuunZnI1eDzd_iFSEcGDwB0cYEsKQcAC2VUnbh-WTlraMRJYw');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h4{
+    color: brown;
+    font-size: 24px;
+
+  }
+  label{
+      font-size: 15px;
   }
  

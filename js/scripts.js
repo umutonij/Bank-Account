@@ -1,59 +1,36 @@
-// Front- End Logic
-$(document).ready(function(){
-    $('#button').click(function(){
-        var antibiot = parseInt($('#amoxi:checked').val());
-        var antibiot500 = parseInt($('#amoxi500:checked').val());
-        var painKiller = parseInt($('#Ibuprofen:checked').val());
-        var painKiller500 = parseInt($('#Ibuprofen500:checked').val());
-        var AntimalarialDrugs = parseInt($('#Amodiaquine:checked').val());
-        var data = [antibiot, antibiot500, painKiller, painKiller500, AntimalarialDrugs]
-        var price = 0
-        // console.log(data);
-        data.forEach(function(item){
-            price = item + price
-            $("#correctNumber").text("HERE IS YOUR TOTAL PRICE: " + price )
-        })
-        // $("#correctNumber").text("HERE IS YOUR TOTAL PRICE: " + price )
-        // var price = 0;
-        // if (antibiot == 0) {
-        //         price += 1000;
-        // };
-    })
-})
-// function check() {
-//     // var antibiot = document.querySelector('#amoxi:checked').value;
-//     var antibiot500 = document.querySelector('#amoxi500:checked').value;
-//     console.log(antibiot500);
-// //     var painKiller = document.pharmacy.painKiller.value;
-// //     console.log("painKiller")
-// //     var AntimalarialDrugs = document.pharmacy.AntimalarialDrugs.value;
-// //     console.log("AntimalarialDrugs")
-// //     var price = 0;
-// //    var ad=0;
+$(document).ready (function(){
+    $("button#new").click (function(){
+        $(".container-fluid").hide();
+        $(".container").show();
 
-// //     if (antibiot == 0) {
-// //         price = price + 1000;
-// //     };
+
+
+var amount =$('#JACK').val();
+console.log(amount)
+ $('#client').text(amount);
+
+ var student =$('#ininitial').val();
+console.log(student)
+ $('#initial1').text(student);
+if($("button#btn")){
+    $("button#btn").click(function(){
+        var kub =parseInt($('input#deposit').val());
+        console.log(kub);
+        var withdr = parseInt($('#Withdraw').val());
+        
+        var sum = kub + parseInt(student);
+        $('#initial1').text(sum);});
+}
+ 
+$("button#send").click(function(){
+
+    var withdr = parseInt($('#Withdraw').val());
     
-    
-// //     if (!painKiller ==true ) {
-// //         price += ad;
-// //     }else{
-// //   price +=400;
-// //     }
-// //     ;
-    
-// //     if (AntimalarialDrugs == 0) {
-// //         price = price + 2500;
-// //     }
+    var kuramo =  parseInt(student)-withdr;
+    $('#initial1').text(kuramo);
+    // var sum = withdr - parseInt(student);
+    // $('#initial1').text(sum);
 
-// //     console.log("price")
-// //     document.getElementById("price").style.visibility = "visible";
-// //     document.getElementById("correctNumber").innerHTML = "HERE IS YOUR TOTAL PRICE: " + price ;
-// //     console.log("price")
-
-// };
-
-// Business-Logic
-
-
+ });
+    });
+});
